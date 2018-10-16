@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Post";
+}
+
+<h2>Post</h2>
+
+<div>
+    <% using(Html.BeginForm()) {%>
+    <label for="name">名前：</label>
+    <%=Html.TextBox("name")%>
+    <input type="submit" value="送信" />
+    <% }%>
+</div>

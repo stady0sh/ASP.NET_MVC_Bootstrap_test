@@ -27,11 +27,12 @@ namespace ASP.NET_MVC_Bootstrap_test.Controllers
             return View();
         }
 
-        //public ActionResult Hello()
-        //{
-        //    ViewData["msg"] = "Hello あいさつ";
+        public ActionResult Hello()
+        {
+            ViewBag.Message = "Hello";
+            ViewData["msg"] = "Hello あいさつ";
 
-        //    return Redirect("");
-        //}
+            return RedirectToAction("Index", "Hello");
+        }
     }
 }
